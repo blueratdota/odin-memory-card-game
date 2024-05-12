@@ -1,2 +1,1 @@
-# odin-memory-card-game
-remember the card kind of game
+# Odin Memory Card Game  
