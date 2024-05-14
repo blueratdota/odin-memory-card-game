@@ -76,13 +76,11 @@ export default function UseNaruto({ score, setScore, bestScore, setBestScore }) 
 
     return (
         <>
-            <button onClick={handleScore}>add score</button>
-            <div>
+            <div className="grid grid-cols-8 gap-4 p-20 ">
                 <CardGrid
                     chars={chars}
                     cardClick={handleCardClick} />
             </div>
-
 
         </>
     )

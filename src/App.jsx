@@ -13,11 +13,14 @@ function App() {
 
 
   return (
-    <>
-      <header>
-        <h1>Naruto Memory Card Game</h1>
-        <p>Score: {score}</p>
-        <p>Best Score: {bestScore}</p>
+    <div className='bg-gradient-to-br from-red-300 h-screen'>
+      <header className='flex justify-between px-20 pt-4' >
+        <h1 className=" font-extrabold text-4xl">Naruto Memory Card Game</h1>
+        <div className='text-lg'>
+          <p>Score: {score}</p>
+          <p>Best Score: {bestScore}</p>
+        </div>
+
       </header>
       <main>
         <UseNaruto
@@ -27,7 +30,7 @@ function App() {
           setBestScore={setBestScore} />
       </main>
       <footer>some footers, name, api</footer>
-    </>
+    </div>
 
   )
 }
