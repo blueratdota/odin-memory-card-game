@@ -8,10 +8,10 @@ export default function Card({ char, cardClick }) {
     })()
 
     return (
-        <div onClick={() => cardClick(char)} className="rounded-md flex flex-col justify-between gap-3 h-90 p-4 bg-gray-100 shadow-lg" >
+        <div onClick={() => cardClick(char)} className="border border-black rounded-md flex flex-col justify-between gap-3 h-90 p-4 shadow-lg bg-gray-200" >
             <div className="text-black text-m text-center font-bold flex justify-center items-center ">{firstName}</div>
 
-            <img src={`${char.images[imgLength]}`} className="h-60 object-cover" />
+            <img src={`${char.images[imgLength]}`} className="h-60 object-cover border border-black" />
         </div>
     )
 

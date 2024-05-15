@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import UseNaruto from './assets/components/useNaruto';
+import logo from './assets/images/Naruto_logo.svg'
+import headerText from './assets/images/header-text.png'
 
 
 function App() {
@@ -13,10 +15,13 @@ function App() {
 
 
   return (
-    <div className='bg-gradient-to-br from-red-300 h-screen'>
+    <div className='bg-gradient-to-t from-orange-300 h-screen'>
       <header className='flex justify-between px-20 pt-4' >
-        <h1 className=" font-extrabold text-4xl">Naruto Memory Card Game</h1>
-        <div className='text-lg'>
+        <div className='flex items-center gap-6'>
+          <img src={logo} alt="" className='max-h-24' />
+          <img src={headerText} alt="" className='max-h-16' />
+        </div>
+        <div className=' flex flex-col justify-center  text-lg'>
           <p>Score: {score}</p>
           <p>Best Score: {bestScore}</p>
         </div>
